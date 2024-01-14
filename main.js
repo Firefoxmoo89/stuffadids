@@ -14,7 +14,7 @@ http.createServer(function (request, response) { // request is object
     });
   }
 
-  if (deet.pathname == "/") {
+  if (deets.pathname == "/") {
     serveFile("templates/index.html",200,{"Content-type":"text/html"});
   }
 
