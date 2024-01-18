@@ -1,3 +1,5 @@
+var fs = require("fs");
+
 exports.serveFile = (file,status,headers) => {
   fs.readFile("template/top.html",(errorTop,htmlTop) => {
     fs.readFile("template/bottom.html",(errorBottom,htmlBottom) => {
